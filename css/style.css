@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+}
+
+.links {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    padding-bottom: 2px;
+    padding-right: 7.5px;
+}
+
+.bandcamp-hover, .soundcloud-hover, .twitter-hover, .youtube-hover, .instagram-hover { 
+    position: relative;
+}
+
+.bandcamp-top, .soundcloud-top, .twitter-top, .youtube-top, .instagram-top {
+    position: absolute;
+    margin-top: 10px;
+    width: 75px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.bandcamp-top:hover, .soundcloud-top:hover, .twitter-top:hover, .youtube-top:hover, .instagram-top:hover {
+    opacity: 1;
+}
+
+.icons {
+    max-width: auto;
+    max-height: 75px;
+    margin-top: 10px;
+}
